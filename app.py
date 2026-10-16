@@ -7,6 +7,7 @@ from datetime import datetime
 from google import genai
 from google.genai import types
 
+
 # ---------------- CONFIGURATION ----------------
 
 st.set_page_config(
@@ -80,7 +81,8 @@ init_db()
 # ---------------- AI ANALYSIS ----------------
 
 def analyze_image(api_key, image_bytes, mime_type):
-    client = genai.Client(api_key=api_key)
+    client = genai.Client(api_key=api_key
+)
 
     prompt = """
 You are EcoSort AI, a careful waste identification assistant.
